@@ -490,7 +490,7 @@ async function sendMessage() {
         } else if (data.error) {
             const em = data.error.message || "";
             if (em.toLowerCase().includes("quota") || em.toLowerCase().includes("limit")) {
-                typeWriter("Kuota habis atau lagi kena limit 😂\n\nIsi API key pribadi lu di menu Pengaturan bro. Dapetin gratis di aistudio.google.com", addMessage("","bot"));
+                typeWriter("Kuota nya Habis Atau Lagi kena limit Bego 😂\n\nLu kalo mau pake ya isi Api key pribadi lu sendiri kontol, ni gua kasih tau caranya:\n\n1. Klik menu Pengaturan di sidebar\n2. Disitu udah ada link ke AIstudio.com\n3. Dapetin API key free tier\n4. Tempel ke input API key di Pengaturan\n\nKalo masih gapaham berarti lu GOBLOK no complain.\nChat Developer di menu Dev Contact", addMessage("","bot"));
             } else { addMessage("⚠ Error: " + em, "bot"); }
         } else { addMessage("⚠ Tidak ada respon.", "bot"); }
     } catch(e) { td.remove(); addMessage("⚠ Gagal konek. Cek internet.", "bot"); }
